@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 	"os"
 	"strconv"
 
@@ -11,6 +12,7 @@ import (
 
 var (
 	cl = flag.Bool("c", false, `Clear the tag`)
+	gt = flag.Bool("g", false, `Get the content of the tag`)
 )
 
 func open() (*acme.Win, error) {
@@ -42,12 +44,16 @@ func main() {
 	}
 	defer win.CloseFiles()
 
-	if *cl {
-		win.Ctl("cleartag")
+	if *gt {
+		tag, err := win.ReadAll("tag")
+		if err != nil {
+			log.Fatalln(err)
+		}
+		fmt.Println(string(tag))
 	}
 
-	if flag.NArg() == 0 {
-		return
+	if *cl {
+		win.Ctl("cleartag")
 	}
 
 	sep := ""
