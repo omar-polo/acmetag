@@ -1,6 +1,9 @@
 # acmetag
 
-`acmetag` is a tool to programmatically interact with `acme(1)` tag.  It provides two flag:
+	go get git.omarpolo.com/acmetag
+
+`acmetag` is a tool to programmatically interact with `acme(1)` tag.  It
+provides two flag:
 
  * `-g` prints the tag content (mnemonic: get)
  * `-c` clears the tag content (mnemonic: clear)
@@ -13,6 +16,14 @@ Of course you can combine the flags:
 
 will first print the current tag content, than clears it and then append
 `fmt`.
+
+
+### Limitations
+
+ * It cannot change the text *before* the `|` character.
+
+
+### Tips
 
 I'm using `acmetag` with [`autoacme`][autoacme] to automatically set
 the tag content based on file type.
