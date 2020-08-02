@@ -1,5 +1,7 @@
 # acmetag
 
+[![GoDoc](https://godoc.org/git.omarpolo.com/acmetag?status.svg)](https://godoc.org/git.omarpolo.com/acmetag)
+
 	go get git.omarpolo.com/acmetag
 
 `acmetag` is a tool to programmatically interact with `acme(1)` tag
