@@ -9,10 +9,9 @@
 // Of course, you can combine the flags:
 //
 // 	acmetag -g -c fmt
-//
-// BUG(op) it cannot change the text before the | character.
-// AFAIK that's not possible
 package main
+
+// BUG(op) it cannot change the text before the | character.
 
 import (
 	"flag"
