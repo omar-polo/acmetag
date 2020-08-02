@@ -1,3 +1,17 @@
+// acmetag is a tool to programmatically interact with acme(1) tag
+// bar.  It provides two flag:
+//
+// 	* -g prints the tag content (mnemonic: get)
+// 	* -c clears the tag content (mnemonic: clear)
+//
+// Any other argument (if passed) will be appended to the tag bar.
+//
+// Of course, you can combine the flags:
+//
+// 	acmetag -g -c fmt
+//
+// BUG(op) it cannot change the text before the | character.
+// AFAIK that's not possible
 package main
 
 import (

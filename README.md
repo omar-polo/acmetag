@@ -2,15 +2,15 @@
 
 	go get git.omarpolo.com/acmetag
 
-`acmetag` is a tool to programmatically interact with `acme(1)` tag.  It
-provides two flag:
+`acmetag` is a tool to programmatically interact with `acme(1)` tag
+bar.  It provides two flag:
 
  * `-g` prints the tag content (mnemonic: get)
  * `-c` clears the tag content (mnemonic: clear)
 
-any other arguments if passed will be appended to the tag.
+Any other argument (if passed) will be appended to the tag bar.
 
-Of course you can combine the flags:
+Of course, you can combine the flags:
 
 	acmetag -g -c fmt
 
