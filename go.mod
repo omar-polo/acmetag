@@ -1,4 +1,4 @@
-module git.omarpolo.com/acmetag
+module go.omarpolo.com/acmetag
 
 go 1.13
 
