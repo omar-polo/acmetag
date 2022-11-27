@@ -1,6 +1,6 @@
 # acmetag
 
-[![GoDoc](https://godoc.org/git.omarpolo.com/acmetag?status.svg)](https://godoc.org/git.omarpolo.com/acmetag)
+[![Go Documentation](https://godocs.io/go.omarpolo.com/acmetag?status.svg)](https://godocs.io/go.omarpolo.com/acmetag)
 
 	go get go.omarpolo.com/acmetag
 
