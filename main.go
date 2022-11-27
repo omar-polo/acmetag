@@ -41,7 +41,7 @@ func open() (*acme.Win, error) {
 func usage() {
 	me := os.Args[0]
 	fmt.Println(me, "- manage acme(1) tag")
-	fmt.Println("Usage:", me, " [-cg] [entries...]")
+	fmt.Println("Usage:", me, " [-c] [-g] [entries...]")
 	fmt.Println(" where entries are words to be added to the acme tag bar")
 	flag.PrintDefaults()
 	os.Exit(1)
